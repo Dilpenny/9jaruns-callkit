@@ -57,8 +57,7 @@ fun showCallNotification(
 
     Log.d("NotificationsManager", "ringtone 2 $ringtone")
 
-    val callTypeTitle =
-        String.format(CALL_TYPE_PLACEHOLDER, if (callType == 1) "Video" else "Audio")
+    val callTypeTitle = "Incoming request"
 
     val builder: NotificationCompat.Builder =
         createCallNotification(context, callInitiatorName, callTypeTitle, pendingIntent, ringtone)
